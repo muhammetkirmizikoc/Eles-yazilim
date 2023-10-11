@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>İletişim</title>
+</head>
+<body>
+    <form action="iletisim.php" method="post" class="container mx-auto border p-5 m-10 bg-gray-100">
+        <h1 class="text-center text-5xl" style="font-family:'Times New Roman', Times, serif ;">Bana ulaş</h1>
+        <div class="mb-4">
+          <label for="name" class="text-sm font-medium">Ad</label>
+          <input required type="text" id="name" name="name" class="border rounded w-full px-3 py-2 border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-offset-2" />
+        </div>
+      
+        <div class="mb-4">
+          <label for="surname" class="text-sm font-medium">Soyad</label>
+          <input required type="text" id="surname" name="surname" class="border rounded w-full px-3 py-2 border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-offset-2" />
+        </div>
+      
+        <div class="mb-4">
+          <label for="mail" class="text-sm font-medium">E-mail</label>
+          <input required type="mail" id="mail" name="mail" class="border rounded w-full px-3 py-2 border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-offset-2" />
+        </div>
+      
+        <div class="mb-4">
+          <label for="message" class="text-sm font-medium">Mesaj</label>
+          <textarea required id="message" name="message" class="border rounded w-full px-3 py-2 border-gray-300 focus:border-indigo-300 focus:ring-indigo-200 focus:ring-offset-2" rows="5"></textarea>
+        </div>
+        <input type="submit" class="w-full px-3 py-2 bg-indigo-500 text-white font-medium rounded-md" value="Gönder">
+      
+      </form>
+      
+    
+</body>
+</html>
